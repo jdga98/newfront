@@ -1,0 +1,20 @@
+.listStyle {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+.wrapCategoryNav {
+  width: 70%;
+}
+.itemCategoryNav {
+  color: white;
+  padding: 5px 10px;
+  transition: 0.2s;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.itemCategoryNav:hover {
+  background: #c8344e;
+}

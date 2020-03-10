@@ -1,0 +1,48 @@
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #cf0a2c;
+  width: 100%;
+  padding: 0px 5px;
+}
+.navPulse {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  text-align: center;
+  color: white;
+}
+.imgIcon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.wrapIconsNavBar {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapNav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapForm {
+  width: 50%;
+}
+.sizeInput {
+  width: 100% !important;
+}
+.btnNavBar {
+  background: transparent !important;
+  color: white !important;
+  padding-right: 10px !important;
+  padding-left: 0px !important;
+  padding-top: 5px !important;
+}
