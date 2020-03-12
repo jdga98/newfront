@@ -34,7 +34,7 @@ const Payments = () => {
               }}
             >
               <p className="pStyle">
-                <i class="fas fa-plus-circle"></i>
+                <i className="fas fa-plus-circle"></i>
               </p>
               <p className="pStyle">Más Metodos de pagos</p>
               <p className="pStyle">Ver más</p>
@@ -84,7 +84,7 @@ const Payments = () => {
               }}
             >
               <p className="pStyle">
-                <i class="fas fa-university"></i>
+                <i className="fas fa-university"></i>
               </p>
               <p className="pStyle">Transferencia bancaria</p>
               <p className="pStyle">Ver más</p>
@@ -128,7 +128,7 @@ const Payments = () => {
               }}
             >
               <p className="pStyle">
-                <i class="fas fa-money-bill-alt"></i>
+                <i className="fas fa-money-bill-alt"></i>
               </p>
               <p className="pStyle">Paga en efectivo</p>
               <p className="pStyle">Ver más</p>

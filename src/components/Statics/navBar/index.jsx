@@ -13,7 +13,7 @@ const NavBarComponent = () => {
       <div className="wrapNav">
         <img src={logo} alt="logo" />
         <form className="wrapForm">
-          <Input type="text" action className="sizeInput">
+          <Input type="text" action className="sizeInput" placeholder="Buscar">
             <input />
             <Button>
               <i className="fas fa-search"></i>

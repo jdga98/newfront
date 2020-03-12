@@ -3,7 +3,7 @@
   display: flex;
   padding: 0px;
   justify-content: space-between;
-  margin: 5px 0px;
+  margin: 0px;
 }
 .wrapCategoryNav {
   width: 70%;
@@ -16,5 +16,25 @@
   cursor: pointer;
 }
 .itemCategoryNav:hover {
-  background: #c8344e;
+  background: #ca324c;
+}
+.dropdown {
+  display: none;
+  padding: 15px;
+  list-style: none;
+  position: absolute;
+  background: white;
+  margin: 0px;
+  z-index: 1000;
+  margin-top: 5px;
+  color: black;
+  cursor: default;
+}
+.dropdownItem {
+  padding: 0px;
+  margin: 0px;
+  cursor: pointer;
+}
+.itemCategoryNav:hover > .dropdown {
+  display: block;
 }

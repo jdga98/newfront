@@ -35,7 +35,7 @@ const Sliders = ({ data, size }) => {
         {data.map((item, index) => {
           return (
             <div key={index} className="itemSlider">
-              <img src={item.url} className="imgSlide" />
+              <img src={item.url} className="imgSlide" alt={`img-${index}`}/>
             </div>
           );
         })}
