@@ -2,9 +2,70 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    background-color: #cf0a2c;
 
     &__info{
-        background-color: #cf0a2c;
+        
+        max-width: 1173px;
+        padding: 7px 10px;
+        margin: 0 auto;
+        display: flex;
+
+        &-wrapper-app{
+            width: 23%;
+            min-width: 276px;
+            text-align: right;
+
+            img {
+                width: 250px;
+                height: 44px;
+                margin: .2em .5em;
+            }
+        }
+
+        &-wrapper{
+            width: 76.5%;
+            height: 50px;
+
+            &-info{
+                padding: 0 12px;
+                
+                p{
+                    font-size: 14px;
+                    color: #f59d9d;
+                    font-weight: 400;
+                    margin: .5em .5em 2px;
+                }
+                a{
+                    font-size: 13px;
+                    color: #fff;
+                    font-weight: 400;
+                    padding: 8px;
+                }
+                button{
+                    border: none;
+                    background: none;
+                    color:white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &_hiperVi{
+            text-decoration: none;
+            margin-right: 30px;
+            margin-top: 12px;
+            width: 141px;
+            height: 30px;
+        }
+
+        &_hiperVid{
+            width: 170px;
+            height: 37px;
+            text-decoration: none;
+            margin-right: 30px;
+            margin-top: 12px;
+        }
     }
 
     &__sic{
@@ -15,4 +76,77 @@
         color: #fff;
         position: relative;
     }
+
+    &__modal{
+        text-align: center;
+        font-weight: 700;
+        font-size: 19px;
+        margin-top: 15px;
+
+        &-title{
+            color: #cf0a2c;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    //mobile styles footer
+    &_mobile{
+        background-color: #cf0a2c;
+        width: 100%;
+        height: 60px;
+        bottom: 0;
+        color: #fff;
+        padding: 5px;
+
+        &_info{
+            width: 81%;
+            height: 60px;
+            margin: 0 auto;
+
+            &_logo{
+                width: 50px;
+                height: 43px;
+                background-color: #ff002c;
+                border-radius: .3em;
+                padding: 8px 3px;
+                position: absolute;
+                box-shadow: 0 0 10px -3px rgba(0,0,0,.79);
+                img{
+                    width: 47px;
+                    height: 42px;
+                    margin: .2em .1em;
+                }
+            }
+        }
+    }
+}
+
+//mobile styles footer
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 360px) {
+    .nav-footer__info{
+        max-width: 360px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 375px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 414px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 800px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
