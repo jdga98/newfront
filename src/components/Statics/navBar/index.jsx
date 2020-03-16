@@ -1,5 +1,5 @@
-import React from "react";
-import { Input, Popup, Button } from "semantic-ui-react";
+import React, { useState } from "react";
+import { Input, Popup, Button, Responsive, Segment } from "semantic-ui-react";
 import logo from "./../../../assets/image/logo.png";
 import mesengerIcon from "./../../../assets/image/messenger_icon.png";
 import whatsappIcon from "./../../../assets/image/whatsapp_icon.png";
@@ -11,7 +11,9 @@ const NavBarComponent = () => {
   return (
     <nav className="navBar">
       <div className="wrapNav">
-        <img src={logo} alt="logo" />
+        <div className="wrapLogo">
+          <img src={logo} alt="logo" className="logo" />
+        </div>
         <form className="wrapForm">
           <Input type="text" action className="sizeInput" placeholder="Buscar">
             <input />
@@ -56,6 +58,11 @@ const NavBarComponent = () => {
           <Button className="btnNavBar">Iniciar sesion</Button>
           <Button className="btnNavBar">Registrarse</Button>
         </div>
+        <Segment.Group className="wasa">
+          <Responsive as={Segment} maxWidth={425}>
+            lo que sea
+          </Responsive>
+        </Segment.Group>
       </div>
       <CategoryBar />
     </nav>

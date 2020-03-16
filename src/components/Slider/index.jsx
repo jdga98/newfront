@@ -30,12 +30,12 @@ const Sliders = ({ data, size }) => {
     }
   };
   return (
-    <StyledWrapSwiper data={data} size={size}>
+    <StyledWrapSwiper data={data} size={size} className="slider">
       <Swiper {...params}>
         {data.map((item, index) => {
           return (
             <div key={index} className="itemSlider">
-              <img src={item.url} className="imgSlide" alt={`img-${index}`}/>
+              <img src={item.url} className="imgSlide" alt={`img-${index}`} />
             </div>
           );
         })}

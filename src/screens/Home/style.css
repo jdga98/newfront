@@ -1,3 +1,63 @@
 .home {
   background: #eaeded;
 }
+.responsiveNav {
+  display: none;
+  padding: 15px ;
+  font-size: 1.2rem;
+  color: white;
+}
+@media (max-width: 425px) {
+  .responsiveNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navBar {
+    padding: 0px;
+  }
+  .ui .button {
+    padding: 10px;
+  }
+  .sizeInput > input {
+    padding: 5px 10px !important;
+  }
+  .wrapLogo {
+    margin-right: 10px;
+  }
+  .home {
+    background: white;
+  }
+  .wrapCategoryNav {
+    display: none;
+  }
+  .wrapPayments {
+    flex-direction: row;
+    padding: 0px;
+  }
+  .payments {
+    margin: 0px;
+  }
+  .itemPayment {
+    padding: 10px;
+  }
+  .itemPayment:nth-child(2) {
+    padding: 0px;
+  }
+  .wrapIconsNavBar {
+    display: none;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .slider {
+    width: 100% !important;
+  }
+  .wrapNav {
+    width: 100%;
+  }
+  .wrapForm {
+    width: auto;
+  }
+}
