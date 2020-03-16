@@ -4,7 +4,6 @@ import axios from 'axios';
 import { isMobile } from 'react-device-detect';
 import LazyLoad from 'react-lazyload';
 
-
 var params;
 var slidesView = 4.4555;
 var space = 5;
@@ -25,11 +24,12 @@ class Slider1 extends Component {
     }
 
     componentDidMount() {
-        // axios.get('https://kieroapi.net/Products/kiero-products/v2/rp')
-        axios.get('https://kieroapi.net/randon/products/')
-            .then(response => {                
+        //axios.get('https://kieroapi.net/Products/kiero-products/v2/rp_2')
+        axios.get('https://kieroapi.net/randon/products/2/')
+            .then(response => {
+                
                 this.setState({
-                    //posts: response.data.result.random_products
+                    //posts: response.data.result.random_products;
                     posts: response.data.data
                 })
             })
@@ -38,6 +38,7 @@ class Slider1 extends Component {
             })
     }
 
+   
     slider = () => {
 
         params = {
@@ -101,7 +102,14 @@ class Slider1 extends Component {
               .replace(/\B(?=(\d{3})+(?!\d))/g, ".");
             return pric;
           }
-          
+
+        //   function title_format(title_format) {
+        //     const title = title_format
+        //       .toString()
+        //       .replace(/ /g, "-");
+        //     return title;
+        //   }
+
         if (isMobile) {
 
             this.slider(slidesView);
@@ -118,20 +126,17 @@ class Slider1 extends Component {
             this.slider();
 
         }
-        
+
         const { posts } = this.state;
-        
         const list = posts.length ? (
             posts.map(post => {
-                
                 return (
-
                     <div className="item-slide-products" key={post.Titulo}>
                         
                         <div className="item-image-container">
                         <a href={"https://articulo.kiero.co/product-details/?id-" + post.id + "-" + post.Titulo}>
-                            <LazyLoad height={200}>
-                                {/*<img src={isIOS ? post.Imagen : post.Imagenes_1} alt={post.Titulo} />*/}
+                            <LazyLoad>
+                                {/*<img src={isIOS ? post.Imagen : post.Imagen_W} alt={post.Titulo} />*/}
                                 <img src={post.Imagenes_1} alt={post.Titulo} className="swiper-lazy"/>
                             </LazyLoad>
                         </a>
@@ -166,7 +171,9 @@ class Slider1 extends Component {
             }
             else{
                 return (
-                    <section className="slide-item">        
+            
+                    <section className="slide-item">
+        
                         <Swiper {...params}>
                             {list}
                         </Swiper>

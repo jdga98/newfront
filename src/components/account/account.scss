@@ -1,0 +1,380 @@
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+%buttons-clickedShared {
+   text-decoration: none;
+      color: #666666;
+      line-height: 3;  
+      background: none;
+      border: none;
+      text-align: left;
+      font-size: 16px;
+      cursor: pointer;
+}
+
+%answer-pubactiv-shared{
+  width: 42px;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    background: #979797;
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    padding: 0;
+    height: 20px;
+    letter-spacing: .07em;
+}
+
+%containViews-shared {
+  margin-left: 335px;
+  padding-top: 76px;
+  width: 60%;
+}
+/*container account*/
+.contain-acc{
+   background: white;
+   position: relative;
+
+    &_left-panel{
+        width: 242px; 
+        background-color: whitesmoke;   
+        border-right: 1px dotted #ccc;
+        padding-top: 65px;
+        float: left;
+    }
+
+    // &_right-panel{
+    //     margin: 0px auto 60px auto;
+    //     padding-right: 48px;
+    //     background-color: white;
+    //     padding-left: 0;
+    // }
+    
+    &_wrapper{
+        width: 58px;
+        background-color: whitesmoke;
+        height: 765px;
+        float: left;
+    }
+
+    a{
+      @extend %buttons-clickedShared;
+      &:active{
+        @include transform(rotate(10deg));
+      }
+      &:focus{
+        font-weight: bold;
+        outline: 0;
+        i{
+          color:#cf0a2c ;          
+        }
+      }
+    }
+
+    &_menu-item{
+      @extend %buttons-clickedShared;
+      &:active{
+        @include transform(rotate(10deg));
+      }
+      &:focus{
+        font-weight: bold;
+        outline: 0;
+        i{
+          color:#cf0a2c ;          
+        }
+      }
+      
+      &_customized-fa{
+        color: #979797;
+        margin-right: 35px;
+        font-size: 24px;
+        float: right;
+        line-height: 2 !important;
+
+        &:active{
+          @include transform(rotate(180deg));
+        }
+      }
+    }
+
+    &_menu-item-mb{
+      text-decoration: none;
+      color: #666666;
+      line-height: 3;  
+      background: none;
+      border: none;
+      text-align: center;
+      font-size: 22px;
+      cursor: pointer;
+      &:active{
+        @include transform(rotate(10deg));
+      }
+      &:focus{
+        font-weight: bold;
+        outline: 0;
+        i{
+          color:#cf0a2c ;          
+        }
+      }
+    }
+}
+
+/*preguntas y respuestas*/
+.quest-public{
+  margin-left: 335px;
+  padding-top: 76px;
+  width: 60%;
+
+  h2{
+    color: #373a47;
+  }
+
+  h3{
+    color: #373a47;
+  }
+
+  p{
+    color: #666666;
+  }
+
+  &_active-item {
+    border-left: 3px solid #cf0a2c;
+  }
+
+  &_questions{
+    margin-top: 30px;
+    color: #666666;
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px dotted #ccc;
+    height: 37px;
+  }
+
+  &_publications{
+    margin-top: 70px;
+    color: #666666;
+    font-size: 20px;
+    width: 100%;
+    height: 37px;
+  }
+
+  &_Inactives{
+    border-top: 1px dotted #ccc;
+    margin-top: 19px;
+    padding-top: 12px;
+  } 
+  
+  &_dropBtn{
+    text-decoration: none;
+    color: #666666;
+    line-height: 3;
+    background: none;
+    border: none;
+    width: 150px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 24px;
+     &:focus {outline:0;}
+  }
+}
+
+.quest-public-mb{
+  margin-left: 57px;
+  padding-top: 70px;
+  width: 60%;
+}
+
+.buy-container{
+  border: 1px solid #ccc;
+  margin-top: 30px;    
+
+  &_deliveredbuyed{
+    padding: 24px 32px 0;
+  }
+
+  &_descripvendor{
+    font-size: 14px;
+    padding: 32px 20px;
+    position: relative;
+    padding-left: 32px;
+  }
+
+  &_buybtn{
+    float: right;
+    background-color: #cf0a2c;
+    padding: 11px;
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+    &:active{
+      @include transform(rotate(10deg));
+    }
+  }
+}
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: absolute;
+    width: 22px;
+    height: 17px;
+    left: 17px;
+    margin-top: 80px;
+    z-index: 1200 !important;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #737682;
+
+    /* Color/shape of burger icon bars on hover*/
+    &:hover {
+      background: #a90000;
+    }
+  }
+  
+  
+ 
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #e8e8e8;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    overflow: hidden !important;
+
+    &:hover{
+      color:red($color: #000000);
+    }   
+
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+    margin-left: 20px;
+
+    & button:hover {
+      border-left: 3px solid #cf0a2c;
+    }
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    background: none;
+    border: none;
+    font-size: 17px;
+    line-height: 3;
+    color: #757575; 
+   
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  /* Information account*/
+  
+  .account-info{
+    display: grid;
+    padding: 1px 0px 0px 11px;
+
+    & button:hover {
+      border-left: 3px solid #cf0a2c;
+    }
+  }
+
+  /**/
+  .foranswer{
+    @extend %answer-pubactiv-shared;
+  }
+
+  .leftside-infomb{
+    margin-top: 105px;
+    display: grid;
+  }
+
+  /*dataPerson styles*/
+
+  .data-person{
+    max-width: 800px;
+    padding: 76px 20px 20px;
+    margin: 0 auto;
+
+    &_container{
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,.07), 0 1px 2px 0 rgba(0,0,0,.25);
+      box-shadow: 0 0 1px 1px rgba(0,0,0,.07), 0 1px 2px 0 rgba(0,0,0,.25);
+      margin-bottom: 36px;
+      margin-top: 20px;
+      padding: 0;      
+    }
+
+    &_field{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      font-size: 16px;
+      padding: 13px 18px;
+      border-bottom: 1px solid #eee;
+    }
+    &_data{
+      flex: 1;
+      -webkit-box-flex: 1;
+    }
+    &_description{
+      flex: 2;
+      -webkit-box-flex: 2;
+      color: #959595;
+    }
+
+  }
+  /*end dataperson styles*/
+
+  

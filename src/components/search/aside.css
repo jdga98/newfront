@@ -1,0 +1,139 @@
+.title_breadcrumb{
+    color: #424242;
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 16px 16px 8px 0;
+    position: relative;
+    word-wrap: break-word;
+    z-index: 1;
+}
+
+.order-products{
+    margin-top: 40px;
+    margin-bottom: 75px;
+}
+.show{
+    display: block !important;
+}
+.btn__filters--orders{
+    border: 1px solid #e8e8e8;
+    padding: 4px;
+    margin: .2em;
+    font-size: 15px;
+}
+.btn__filters--orders i {
+    margin: 0 .3em;
+}
+.title_price{
+    font-size: 20px;
+    color: #424242;
+    font-weight: 400;  
+}
+.filters__value{
+    margin-top: 5px;
+}
+.price__filters{
+    border: 1px solid #e8e8e8;
+    width: 180px;
+    margin: .3em 0;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.btn__filters--button{
+    display: block;
+    border: 1px solid #e8e8e8;
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.title_send {
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 18px;
+    margin-top: 56px;
+    color: #424242;
+    font-weight: 400;
+}
+
+.title_orders{
+    font-size: 20px;
+    color: #424242;
+    font-weight: 400;
+}
+
+.quantity{
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+.tree_category{
+    width: 100%;
+    border-bottom: 1px solid #eaeded;
+}
+
+.tree_category ul {
+    font-size: 14px;
+    margin: 0em -1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tree_category li{
+    list-style: none;
+    line-height: 2.2;
+
+}
+
+.tree_category a {
+    color: #333;
+    font-weight: 300;
+    text-decoration: none;
+}
+.tree_category h2 {
+    font-size: 18px;
+    margin: .5em 0em;
+    margin-top: 26px;
+    font-weight: 400;
+}
+
+.filters_ship{
+    display: flex;
+    line-height: 24px;  
+}
+
+.icon-ship img {
+    width: 22px;
+    margin: 0em 0em;
+}
+
+.filters_ship h2{
+    font-size: 13px;
+    color: #424242;
+    font-weight: 300;
+}
+
+.icon-ship {
+    padding: 0em .5em;
+}
+.categories-additional{
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+
+.categories-additional li {
+    list-style: none;
+    margin: .5em 0;
+    padding-right: 23px;
+}
+.categories-additional a{
+    color: #424242;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 1.4;
+}
+.categories-additional:hover li{
+    color: #aaa;
+}
