@@ -1,0 +1,111 @@
+#fullform{
+    display:none ;
+}
+.footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.footer-mb{
+position: relative;
+left: 0;
+bottom: 0;
+width: 100%;
+color: white;
+text-align: center;
+}
+
+.inp-Email{
+  width: 97%;
+  border: 1px solid #424242;
+  height: 25px;
+  border-radius: .2em;
+  padding: 8px;
+  font-weight: 400;
+  color: #424242;
+}
+
+.text-login {
+  font-size: 15px;
+    font-weight: 300;
+}
+.lg-name{
+  margin: 12px 0px;
+}
+
+.lg-name-hidden{
+  display: none;
+  color: #cf0a2c;
+  font-size: 14px;
+}
+
+.inp-forgetpassw{
+  padding: 17px 0px;
+  text-align: right;
+}
+
+.txt-password{
+  color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.txt-password:hover{
+  color:#cf0a2c;
+}
+
+.ui_not-register{
+  margin: 12px 0px;
+  text-align: center; 
+  margin-bottom: 40px; 
+}
+
+/* new styles */
+
+.main-login{
+  position: relative;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #424242;
+}
+
+input:focus {
+  background-color:#F0F8FF;
+  }
+
+.error {
+  color:#db2269;
+  font-size: 0.625em;
+  display: relative;
+}
+
+.fullName {
+  margin-right: 1%;
+}
+.fullName,
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.fullName {
+  width: 100%;
+}
+.email,
+.password {
+  width: 100%;
+}
+.submit {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

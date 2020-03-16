@@ -1,0 +1,283 @@
+//privacy and terms styles
+.privacy {
+  &_container {
+    width: 1138px;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 20px;
+  }
+  &_bread {
+    ul {
+      margin-left: -34px;
+      margin-bottom: 1rem;
+    }
+    li {
+      list-style: none;
+      margin: 0 -2.2em;
+      display: contents;
+      font-size: 13px;
+      color: #424242;
+      font-weight: 300;
+    }
+    a {
+      text-decoration: none;
+      font-size: 13px;
+    }
+  }
+  &_title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #424242;
+    line-height: 100px;
+  }
+  &_information {
+    margin-top: 3%;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    padding: 50px;
+    border-radius: 0.2em;
+
+    p {
+      font-size: 16px;
+      margin-left: 0;
+      color: #424242;
+      font-weight: 300;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      line-height: 24px;
+      text-align: justify;
+    }
+    span {
+      font-weight: 600;
+    }
+    h2 {
+      color: #424242;
+      line-height: 50px;
+    }
+    li {
+      font-size: 16px;
+      margin-left: 0;
+      color: #424242;
+      font-weight: 300;
+      margin-top: 0;
+      line-height: 24px;
+    }
+  }
+}
+
+//help styles
+.help {
+  &_container {
+    display: flex;
+    margin-top: 6%;
+  }
+
+  &_navegation {
+    width: 25%;
+    height: 100vh;
+    background-color: #e8e8e8;
+
+    &_menu {
+      margin: 4em 3em;
+    }
+    li {
+      list-style: none;
+      margin: 0.8em 1em;
+      color: #424242;
+      font-weight: 300;
+      font-size: 16px;
+    }
+    strong {
+      color: #333;
+    }
+  }
+
+  &_description {
+    width: 75%;
+    height: auto;
+    background-color: #fff;
+    margin-bottom: 60px;
+
+    &_info {
+      width: 92%;
+      padding: 30px 27px;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #424242;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 300;
+      color: #424242;
+      margin: 0;
+      margin-bottom: 25px;
+      text-align: justify;
+    }
+    &_payments {
+      width: 92%;
+      margin-bottom: 20px;
+      margin: 0em 2em;
+      overflow-x: auto;
+      &_table {
+        width: 100%;
+      }
+      tr {
+        text-align: left;
+      }
+      th {
+        text-align: inherit;
+        width: 448px;
+        font-size: 15px;
+        font-weight: 300;
+        color: #424242;
+      }
+
+      table,
+      th,
+      td {
+        padding: 15px;
+        border: 1px solid #d3d3d3;
+        border-collapse: collapse;
+        color: #4e4d4d;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+/*app styles*/
+.app {
+  &_container {
+    max-width: 800px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  &_information {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+
+    &_title {
+      text-align: center;
+      margin: 2em 0;
+      font-size: 48px;
+      color: #424242;
+      font-weight: 300;
+      margin-bottom: 75px;
+
+      &_download {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 80px;
+        text-align: center;
+      }
+    }
+
+    &_description {
+      width: 61%;
+      margin: 0 auto;
+
+      p {
+        text-align: center;
+        font-size: 26px;
+        color: #424242b8;
+        font-weight: 300;
+      }
+      h2 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 80px;
+        text-align: center;
+      }
+    }
+
+    &_image {
+      margin-top: 40px;
+      margin: 0 auto;
+      width: 72%;
+      height: 80px;
+      display: flex;
+
+      &_devices {
+        width: 55%;
+        height: 80px;
+        img{
+            width: 218px;
+            height: 76px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+      }
+    }
+  }
+}
+
+/*foot style*/
+
+.foot{
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+/*mobile styles*/
+@media only screen and (max-width: 1107px) {
+  .privacy {
+    &_container {
+      width: 100%;
+    }
+    &_title {
+      line-height: 36px;
+      font-size: 24px;
+      margin-left: 10px;
+    }
+    &_information {
+      padding: 35px;
+      text-align: justify;
+    }
+  }
+
+  .help_navegation_menu {
+    margin: 4em 1em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .help_navegation {
+    display: none;
+  }
+  .help_description {
+    width: 100%;
+
+    &_info {
+      padding: 17px 13px;
+    }
+
+    &_payments {
+      margin: 0em 0.6em;
+    }
+  }
+
+  .app_information_title {
+    font-size: 32px;
+  }
+  .app_information_description p {
+    font-size: 18px;
+  }
+  .app_information_image_devices{
+      width: 100%;
+  }
+  .app_information_image{
+      display: grid;
+  }
+  .foot{
+    position: relative;
+  }
+}
