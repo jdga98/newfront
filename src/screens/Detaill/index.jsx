@@ -1,18 +1,18 @@
 import React from "react";
 import '../../desktop.css';
 import ThumbnailGallery from "../../components/thumbnail-gallery/thumbnail-gallery";
-import Footer from "../Footer/Footer";
-import Nav from "../Nav/Nav";
-import NavCategory from "../NavCategory/NavCategory";
-import BuyProduct from "../BuyDetails/BuyDetails";
-import ServerRequest from "../ServerRequest/ServerRequest";
-import Breadcrum from "../Breadcrum/Breadcrum";
-import ProductDetail from "../product-detail/product-detail";
+import Footer from "../../components/Footer";
+import Nav from "../../components/Nav";
+import NavCategory from "../../components/NavCategory";
+import BuyProduct from "../../components/BuyDetails/BuyDetails";
+import ServerRequest from "../../components/ServerRequest/ServerRequest";
+import Breadcrum from "../../components/Breadcrum/Breadcrum";
+import ProductDetail from "../../components/product-detail/product-detail";
 import { isMobile } from "react-device-detect";
-import Explore from "../Explore/Explore";
-import Slider2 from "../Slider/Slider2";
-import Slider3 from "../Slider/Slider3";
-import PausedProduct from "../Breadcrum/PausedProduct";
+import Explore from "../../components/Explore/Explore";
+import Slider2 from "../../components/Slider/Slider2";
+import Slider3 from "../../components/Slider/Slider3";
+import PausedProduct from "../../components/Breadcrum/PausedProduct";
 import axios from "axios";
 
 

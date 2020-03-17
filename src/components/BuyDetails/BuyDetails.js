@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./_pdDetail.css";
-import logoPay from "../../resource/pay.jpg";
+import logoPay from "../../assets/image/pay.jpg";
 import Button from "../Button/Button";
-import ImgPayOnline from "../../resource/pay2.png";
-import ImgModal from "../../resource/payModal.png";
-import ImgEfectBaloto from "../../resource/payBaloEfe.png";
-import imgEnvio from "../../resource/envio-01.jpg";
-import imgPayAll from "../../resource/payAll.png";
-import { Modal, ModalContent } from "../Modal/Modal";
+import ImgPayOnline from "../../assets/image/pay2.png";
+import ImgModal from "../../assets/image/payModal.png";
+import ImgEfectBaloto from "../../assets/image/payBaloEfe.png";
+import imgEnvio from "../../assets/image/envio-01.jpg";
+import imgPayAll from "../../assets/image/payAll.png";
+import { Modal } from "semantic-ui-react";
 import Select from "react-select";
 import Sticky from "react-sticky-el";
 import { isMobile } from "react-device-detect";
@@ -157,11 +157,8 @@ class BuyProduct extends Component {
         <div>
           <div className="pdetail-mobil">
             <div className="k-shipping">
-              {isModal === "modal-one" && (
                 <Modal>
-                  <ModalContent
-                    show={this.state.showModal}
-                    handleClose={() => this.setState({ showModal: null })}
+                  <Modal.Content
                     modalTitle="Metodos de pago"
                   >
                     {modalText}
@@ -172,33 +169,27 @@ class BuyProduct extends Component {
                     {textTransOnline}
                     {imgEfecty}
                     {textFinishBuy}
-                  </ModalContent>
+                  </Modal.Content>
                 </Modal>
-              )}
 
-              {isModal === "modal-two" && (
+             
                 <Modal>
-                  <ModalContent
-                    show={this.state.showModal}
-                    handleClose={() => this.setState({ showModal: null })}
+                  <Modal.Content
                     modalTitle="Envios"
                   >
                     {modalImgEnvio}
-                  </ModalContent>
+                  </Modal.Content>
                 </Modal>
               )}
 
-              {isModal === "modal-three" && (
+              
                 <Modal>
-                  <ModalContent
-                    show={this.state.showModal}
-                    handleClose={() => this.setState({ showModal: null })}
+                  <Modal.Content
                     modalTitle="Garantía"
                   >
                     {textWarranty}
-                  </ModalContent>
+                  </Modal.Content>
                 </Modal>
-              )}
               <div className="icon-shipMb">
                 <i className="fas fa-truck-moving"></i>
               </div>
@@ -233,9 +224,8 @@ class BuyProduct extends Component {
       return (
         <div className="buy-details buy-right" ref="Progress1">
           <img className="imgPay" src={logoPay} alt="logo pay"></img>
-          {isModal === "modal-one" && (
             <Modal>
-              <ModalContent
+              <Modal.Content
                 show={this.state.showModal}
                 handleClose={() => this.setState({ showModal: null })}
                 modalTitle="Metodos de pago"
@@ -248,33 +238,28 @@ class BuyProduct extends Component {
                 {textTransOnline}
                 {imgEfecty}
                 {textFinishBuy}
-              </ModalContent>
+              </Modal.Content>
             </Modal>
-          )}
 
-          {isModal === "modal-two" && (
             <Modal>
-              <ModalContent
-                show={this.state.showModal}
-                handleClose={() => this.setState({ showModal: null })}
+              <Modal.Content
                 modalTitle="Envios"
               >
                 {modalImgEnvio}
-              </ModalContent>
+              </Modal.Content>
             </Modal>
           )}
 
-          {isModal === "modal-three" && (
             <Modal>
-              <ModalContent
+              <Modal.Content
                 show={this.state.showModal}
                 handleClose={() => this.setState({ showModal: null })}
                 modalTitle="Garantía"
               >
                 {textWarranty}
-              </ModalContent>
+              </Modal.Content>
             </Modal>
-          )}
+            
           <div className="button-wrap">
             <Button onClick={() => this.setState({ showModal: "modal-one" })}>
               Más información
