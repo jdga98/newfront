@@ -1,0 +1,55 @@
+.contain-mobil{
+    background: #ffffff;
+    
+}
+
+.banner-mobile{
+    margin-bottom: 30px;
+
+    &__imgContainer{
+        margin: 0.5em 0em;
+        max-width: 100%;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img{
+        height: 93%;
+        object-fit: scale-down;
+        margin: .5em 0em;
+    }
+}
+
+.price-title-container{
+
+    &__title{
+        margin: 1em 1em;
+        font-size: 20px;
+        color: #4c4c4c;        
+        font-weight: 600;
+        line-height: 20pt;
+    }
+
+    &__price{
+        margin: .5em .5em;
+        font-size: 37px;
+        color: #424242;
+        font-weight: 400;
+    }
+}
+
+.ui__pause-products {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    max-width: 1138px;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: .2em;
+    margin-top: 2%;
+    height: auto;
+}
+
+.ui__pause-products_disabled{
+    display: none;
+}

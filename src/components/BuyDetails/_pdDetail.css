@@ -1,0 +1,267 @@
+.container {
+    width: 100%;
+}
+
+.container-left-right{
+    background:#fff;
+    max-width: 1140px;
+    position: absolute;
+    border-radius: 8px;
+    border: 1px solid #e3e3e3;
+}
+
+.buy-details{
+    margin-left: 0px;
+}
+
+.buy-right {
+    background: #ffffff;
+    width: 40%;
+    float: right;
+    border-radius: 7px;
+    min-height: 100%;
+}
+
+.btn-payments {
+    width: 84%;
+    margin: 1em 1.8em;
+    margin-bottom: 1em;
+    background-color: #cf0a2c;
+    height: 40px;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #bd4646;
+    color: #fff;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.btn-paymentsMb {
+    width: 94%;
+    background-color: #cf0a2c;
+    height: 40px;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #bd4646;
+    color: #fff;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+
+
+.imgPay{
+    width: 44%;
+    height: 40px;
+    margin-left: 20px;
+    object-fit: scale-down;
+}
+
+
+.k-shipping{ 
+   width: 80%;
+   height: 50px;
+   display: flex;
+   margin: 0em 2.7em;
+   margin-bottom: -17px;
+   position: relative;    
+}
+
+.icon-ship {
+    color: #cf0a2c;
+    padding-left: 24px;
+    width: 20px;
+    height: 20px;
+    left: -42px;
+    top: 12px;
+    position: absolute;
+}
+
+.icon-shipMb {
+    color: #cf0a2c;
+    left: -23px;
+    top: 12px;
+    position: absolute;
+    font-size: 17pt;
+}
+
+.info-ship{
+    margin-left: 7px;
+}
+
+.send-k {
+    margin: .3em .3em;
+    font-size: 22px;
+    color: #cf0a2c;
+}
+
+.send-kmb {
+    margin: -0.5em 1.5em;
+    font-size: 17px;
+    color: #cf0a2c;
+    line-height: 38px;
+}
+
+.pdImported{
+    margin: 0 3.6em;
+}
+
+.pdImported p {
+    color: #424242;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 2px;
+    margin: 0em 0em;
+}
+
+.quantity {
+    width: 80%;
+    height: 50px;
+    margin: 1.2em 1.5em;
+    margin-bottom: 4px;
+}
+
+.quantityMb {
+    width: 94%;
+    height: 45px;
+    margin: .4em 0.6em;
+    margin-bottom: 4px;
+    position: relative;
+    z-index: 40;
+}
+
+.drpUnities{
+    max-width: 140px;
+}
+
+/*tittle and price */
+
+.item-description{
+    margin: 13px;
+}
+
+.item-title-products{
+    margin: 20px;
+    font-size: 22px;
+    color: #4c4c4c;
+    margin: 1em;
+    margin-bottom: 1em;
+    font-weight: 300;
+}
+
+.price-title{
+    margin: 20px;
+    color: #3d3d3d;
+    font-weight: lighter;
+}
+
+.price-font{
+    font-size: 33px;
+    font-weight: lighter;
+}
+
+.avaible-product{
+    color: #555;
+    margin-top: 21px;
+    margin-bottom: 15px;
+    margin-left: 22px;
+}
+/*End tittle and price */
+
+
+.title-payment_ui {
+    text-transform: uppercase;
+    margin: 1em 1em;
+    font-size: 19px;
+    font-weight: 400;
+    color: #424242;
+}
+
+.pay-all {
+    width: 98%;
+    height: 304px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-top: 43px;
+    border-top: 1px solid #e8e8e8;
+    margin-bottom: 84px;
+}
+
+.pay-all-mb {
+    width: 98%;
+    border-bottom: 1px solid #e8e8e8;
+    margin-top: 43px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.pay-all-mb img{
+    width: 95%;
+}
+
+
+.medi-warranty{
+    width: 100%;
+    height: 270px;
+}
+
+.title-warranty{
+    margin: 1em 1em;
+    font-size: 18px;
+    font-weight: bold;
+    color: #424242;
+    margin-bottom: -6px;
+}
+.title-warranty-buy{
+    margin: 1em 1.2em;
+    font-size: 15px;
+    font-weight: bold;
+    color: #424242;
+    margin-bottom: -4px;
+}
+.info-warranty{
+    margin: 1em 2.4em;
+    font-size: 13.777px;
+    font-weight: 300;
+    color: #424242;
+    line-height:16pt;
+}
+
+
+.pay-all img{
+    width: 95%;
+}
+/* Responsive mobile media queries */
+@media (min-width: 1200px){
+    .container {max-width: 1140px;
+        margin-left: 20%;
+    }
+}
+
+.fixed-price{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 12px;
+}
+
+.btnbuy{
+    padding-top: 135px;
+   
+}
+.fixedpricemove{
+    height: 220px;
+    border-bottom: 1px solid #e3e3e3;
+    z-index: 2;
+}
+
+.m-warranty{
+    text-align: center;
+    line-height: 25.5pt;
+}
+
+.pdetail-mobil{
+    height: 77px;
+}
+
+.btnPaymentsMb{
+    text-align: center;
+}

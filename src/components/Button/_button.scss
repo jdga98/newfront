@@ -1,0 +1,142 @@
+.button-wrap {
+	
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.c-button {
+	padding: 07px 23px;
+	border: none;
+	background-color: white;	
+	font-family: 'Open Sans', sans-serif;
+	color:#007bff;
+	cursor: pointer;
+	font-size: 14px;
+	transition: .3s all ease;
+	
+	&:first-child {
+		margin-bottom: 5px;
+	}
+	
+	&:hover {
+		-webkit-text-decoration-line: underline;
+		text-decoration-line: underline;  
+	}
+}
+
+.c-button2 {
+	padding: 09px 57px;
+	border: none;
+	background-color: white;	
+	font-family: 'Open Sans', sans-serif;
+	color:#007bff;
+	cursor: pointer;
+	font-size: 14px;
+	transition: .3s all ease;
+	
+	&:first-child {
+		margin-bottom: 5px;
+	}
+	
+	&:hover {
+		-webkit-text-decoration-line: underline;
+		text-decoration-line: underline;  
+	}
+
+	&__mb{
+		padding: 7px 27px;
+		border: none;
+		background-color: white;	
+		font-family: 'Open Sans', sans-serif;
+		color:#007bff;
+		cursor: pointer;
+		font-size: 14px;
+		transition: .3s all ease;
+	}
+}
+
+.c-buttonSend{
+	padding: 09px 57px;
+    border: none;
+    background-color: #cf0a2c;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+	transition: .3s all ease;
+	
+	&:first-child {
+		margin-bottom: 5px;
+	}
+	
+	&:hover {
+		-webkit-text-decoration-line: underline;
+		text-decoration-line: underline;  
+	}
+}
+
+.c-buttonPaymentMediums{
+	padding: 09px 57px;
+    border: none;
+    background-color: #cf0a2c;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+	transition: .3s all ease;
+	margin-right: 10px;
+	border-radius: 5px;
+	
+	&:first-child {
+		margin-bottom: 5px;
+	}
+	
+	&:hover {
+		background: white; 
+		color:black;
+		border: 1px solid #e3e3e3;
+	}
+
+	&__mobile{
+		border: none;
+		background-color: #cf0a2c;
+		font-family: 'Open Sans', sans-serif;
+		color: white;
+		cursor: pointer;
+		font-size: 12px;
+		transition: .3s all ease;
+		margin-right: 10px;
+		border-radius: 5px;
+		margin-bottom: 10px;
+		width: 29%;
+    	height: 60px;
+	}
+}
+
+.c-buttonSend{
+	padding: 09px 57px;
+    border: none;
+    background-color: #cf0a2c;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+	transition: .3s all ease;
+	margin-right: 10px;
+	border-radius: 5px;
+	
+	&:first-child {
+		margin-bottom: 5px;
+	}
+	
+	&:hover {
+		
+		background: white; 
+		color:black;
+		border: 1px solid #e3e3e3;
+	}
+}
+
+
+

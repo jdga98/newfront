@@ -1,0 +1,74 @@
+//here we declare the left container
+.left-container{
+    background: white;
+    position: relative;
+    width: 60%;
+    border-radius: 7px;
+    float: left;
+    overflow: hidden;
+    border-right: 1px solid #e3e3e3;
+}
+
+.left-thumbnail{    
+    width: 100%;
+    height: 516px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.p-description{
+    color: aqua;
+    width: 100%;
+    height: 100%;
+}
+
+.active-thumbnail{
+    background-color: #fff;
+    height: inherit;
+    left: 77px;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    min-height: 516px;
+    margin: 0 0 1rem;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.grid-thumbnail{
+    height: 100%;
+    width: 10%;   
+}
+
+.thumbnail{
+    height: 14.31%;
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    position: relative;
+}
+
+.img-thumbnail{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: scale-down;
+    &:hover{
+        border-left: 3px solid #cf0a2c; 
+    }
+}
+
+.img-thumbnail-active{
+    width: 67%;
+    height: 470px;
+    display: block;
+    max-width: 500px; 
+    margin: auto; 
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    object-fit: scale-down;
+}
+// end left container
