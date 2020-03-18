@@ -56,7 +56,7 @@
         color: #fff;
         padding: 0px 1px;
         float: right;
-        margin-left: 14px;
+        margin-left: 5px;
         font-size: 16px;
         border: none;
         background-color: #cf0a2c;
@@ -98,7 +98,7 @@
         font-size: 16px;
         outline: 0;
         padding: 5px;
-        height: 25px;
+        height: 35px;
         border: 1px solid #e8e8e8;
         background-color: #fff;
     }

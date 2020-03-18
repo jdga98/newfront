@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../aside/aside.css';
-import Send from '../resource/ship.svg';
-import { Modal, ModalContent } from '../component/Modal/Modal';
-import Button from '../component/Button/Button';
-import '../component/Button/Button';
+import Send from '../../assets/image/ship.svg';
+import { Modal } from 'semantic-ui-react';
 
 var minPric = null;
 var maxPric = null;
@@ -130,8 +128,7 @@ class Aside extends Component {
         const { tree } = this.state;
         const {titl} = this.state;     
         const treeFilter = tree;
-        const items = []
-        const isModal = this.state.showModal;   
+        const items = [];
         const categories = <div className="row categories-additional">{items}</div>
         //here we record the categories and put into items
         for (var i = 0; i < treeFilter.length; i++) {
@@ -187,20 +184,17 @@ class Aside extends Component {
                     </ul>
                 </div>
 
-                {isModal === "modal-one" && (
                     <Modal>
-                        <ModalContent
-                            show={this.state.showModal}
-                            handleClose={() => this.setState({ showModal: null })}
+                        <Modal.Content
+                           
                             modalTitle="Categorias"
                         >
                             {categories}
 
-                        </ModalContent>
+                        </Modal.Content>
                     </Modal>
-                )}
                 <div className="button-wrap">
-                    <Button onClick={() => this.setState({ showModal: "modal-one" })}>Ver todos</Button>
+                    <button onClick={() => this.setState({ showModal: "modal-one" })}>Ver todos</button>
                 </div>
             </div>
         )

@@ -7,8 +7,10 @@ import "./_app.scss"
 
 import Home from "./screens/Home";
 import Detaill from "./screens/Detaill";
-import Category from "./screens/Category";
+import ListCategory from "./screens/ListCategory";
 import NotFound from "./components/NotFound";
+import Category from "./components/Category";
+import CompleteCategory from './components/CompleteCategory';
 
 const App = () => {
   return (
@@ -17,8 +19,10 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/Home" component={Home} />
-          <Route path="/Category" component={Category} />
+          <Route path="/listcategory" component={ListCategory} />
           <Route path="/product-details" component={Detaill} />
+          <Route path="/category" component={Category} />
+          <Route path="/complete-category" component={CompleteCategory} />
           <Route path="" component={NotFound} />
         </Switch>
       </Router>
