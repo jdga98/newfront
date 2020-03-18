@@ -9,8 +9,11 @@ const StyledWrapSwiper = Styled.div`
   height:${({ size }) => (size ? `${size.h}${size.u}` : "auto")};
   margin:auto;
 `;
-
-const Sliders = ({ data, size }) => {
+const StyledWrapImg = Styled.div`
+width:${({ cantImg }) => (cantImg ? cantImg : "auto")};
+height:${({ cantImg }) => (cantImg ? cantImg : "auto")};
+`;
+const Sliders = ({ data, size, cantImg }) => {
   const params = {
     centeredSlides: true,
     autoplay: {
@@ -30,13 +33,18 @@ const Sliders = ({ data, size }) => {
     }
   };
   return (
-    <StyledWrapSwiper data={data} size={size} className="slider">
+    <StyledWrapSwiper
+      data={data}
+      size={size}
+      cantImg={cantImg}
+      className="slider"
+    >
       <Swiper {...params}>
         {data.map((item, index) => {
           return (
-            <div key={index} className="itemSlider">
+            <StyledWrapImg key={index} className="itemSlider">
               <img src={item.url} className="imgSlide" alt={`img-${index}`} />
-            </div>
+            </StyledWrapImg>
           );
         })}
       </Swiper>

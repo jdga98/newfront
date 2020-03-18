@@ -4,15 +4,22 @@ import logo from "./../../../assets/image/logo.png";
 import mesengerIcon from "./../../../assets/image/messenger_icon.png";
 import whatsappIcon from "./../../../assets/image/whatsapp_icon.png";
 import "./style.css";
-
+import { Link } from "react-router-dom";
 import CategoryBar from "./../categoryBar";
+import ResponsiveNav from "./../responsiveNav";
 
 const NavBarComponent = () => {
+  const [state, setState] = useState(false);
+  const toggleMenu = () => {
+    state ? setState(true) : setState(false);
+  };
   return (
     <nav className="navBar">
       <div className="wrapNav">
         <div className="wrapLogo">
-          <img src={logo} alt="logo" className="logo" />
+          <Link to="/Home">
+            <img src={logo} alt="logo" className="logo" />
+          </Link>
         </div>
         <form className="wrapForm">
           <Input type="text" action className="sizeInput" placeholder="Buscar">
@@ -58,11 +65,14 @@ const NavBarComponent = () => {
           <Button className="btnNavBar">Iniciar sesion</Button>
           <Button className="btnNavBar">Registrarse</Button>
         </div>
-        <Segment.Group className="wasa">
-          <Responsive as={Segment} maxWidth={425}>
-            lo que sea
-          </Responsive>
-        </Segment.Group>
+        <Responsive as="div" maxWidth={425}>
+          <div>
+            <span className="responsiveBarsMenu" onClick={toggleMenu}>
+              <i className="fas fa-bars"></i>
+            </span>
+          </div>
+          <ResponsiveNav visible={state} />
+        </Responsive>
       </div>
       <CategoryBar />
     </nav>

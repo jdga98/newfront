@@ -1,0 +1,30 @@
+.wrapContent {
+  display: flex;
+  width: 80%;
+  padding: 30px;
+  margin: auto;
+}
+.wrapCards {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapFilter {
+  width: 30%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.responsiveBarsMenu {
+  padding: 20px;
+}
+.navResponsive {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background: lime;
+  top: 0px;
+  left: -100px;
+}
