@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import Store from "./store";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
+import "./_app.scss"
 
 import Home from "./screens/Home";
 import Detaill from "./screens/Detaill";
