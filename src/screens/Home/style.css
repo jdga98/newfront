@@ -1,13 +1,13 @@
-.home {
+body {
   background: #eaeded;
 }
 .responsiveNav {
   display: none;
-  padding: 15px ;
+  padding: 15px;
   font-size: 1.2rem;
   color: white;
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .responsiveNav {
     display: flex;
     justify-content: center;
@@ -25,9 +25,9 @@
   .wrapLogo {
     margin-right: 10px;
   }
-  .home {
+  /* body {
     background: white;
-  }
+  } */
   .wrapCategoryNav {
     display: none;
   }
@@ -58,6 +58,6 @@
     width: 100%;
   }
   .wrapForm {
-    width: auto;
+    width: 90%;
   }
 }

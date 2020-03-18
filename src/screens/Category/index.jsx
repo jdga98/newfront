@@ -3,7 +3,6 @@ import NavBar from "./../../components/Statics/navBar";
 import Card from "./../../components/Card";
 import Filter from "./../../components/Filter";
 import "./style.css";
-
 const Category = () => {
   const state = [
     {
@@ -78,7 +77,6 @@ const Category = () => {
     }
   ];
   const data = { category: "Imagenes planas 600 x 600" };
-  console.log(data);
   return (
     <section>
       <NavBar />

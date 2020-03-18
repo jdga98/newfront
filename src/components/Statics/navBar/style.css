@@ -5,6 +5,10 @@
   flex-direction: column;
   background: #cf0a2c;
   padding: 0px 5px;
+  z-index: 10;
+}
+.responsiveBarsMenu {
+  color: white;
 }
 .navPulse {
   padding: 10px;
@@ -48,11 +52,4 @@
 .logo {
   max-width: 100%;
   max-height: 100%;
-}
-.ui .segment {
-  background: transparent !important;
-}
-.ui .segments {
-  margin: 0px !important;
-  padding: 0px !important;
 }

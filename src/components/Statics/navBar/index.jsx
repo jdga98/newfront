@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Input, Popup, Button, Responsive, Segment } from "semantic-ui-react";
+import { Input, Popup, Button, Responsive } from "semantic-ui-react";
 import logo from "./../../../assets/image/logo.png";
 import mesengerIcon from "./../../../assets/image/messenger_icon.png";
 import whatsappIcon from "./../../../assets/image/whatsapp_icon.png";
@@ -11,7 +11,11 @@ import ResponsiveNav from "./../responsiveNav";
 const NavBarComponent = () => {
   const [state, setState] = useState(false);
   const toggleMenu = () => {
-    state ? setState(true) : setState(false);
+    if (state === false) {
+      setState(true);
+    } else {
+      setState(false);
+    }
   };
   return (
     <nav className="navBar">
@@ -65,13 +69,18 @@ const NavBarComponent = () => {
           <Button className="btnNavBar">Iniciar sesion</Button>
           <Button className="btnNavBar">Registrarse</Button>
         </div>
-        <Responsive as="div" maxWidth={425}>
+        <Responsive as="div" maxWidth={768}>
           <div>
-            <span className="responsiveBarsMenu" onClick={toggleMenu}>
+            <span
+              className="responsiveBarsMenu"
+              onClick={() => {
+                toggleMenu();
+              }}
+            >
               <i className="fas fa-bars"></i>
             </span>
           </div>
-          <ResponsiveNav visible={state} />
+          <ResponsiveNav visible={state} close={toggleMenu} />
         </Responsive>
       </div>
       <CategoryBar />
